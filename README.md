@@ -1,17 +1,40 @@
-## Inverse Kinematics Playground
+# Starbase Academy STEM Playground
 
-This sample site showcases a lightweight inverse kinematics arm built with [p5.js](https://p5js.org/), along with a grid of external links to creative coding resources.
+NASA engineer turned educator, building Starbase Academy to make science real, tactile, and fun. This landing page blends a kinetic p5.js demo with story-driven content, nine feature tiles, and a responsive resource grid to highlight hands-on STEM initiatives.
 
-### Getting started
+## Highlights
 
-1. Open `index.html` in your preferred browser.
-2. Move the pointer (or tap and drag on touch) within the canvas to guide the articulated arm.
-3. Explore the featured tiles to jump into live experiments, teaching tools, or related side projects.
+- Space-themed starfield, blueprint grid overlay, and rim-lit hero panel to ground the Starbase Academy identity.
+- Sketch-style inverse-kinematics arm with jittered strokes, kinetic glow, and trailing motion arcs that keeps reaching toward your pointer even off-canvas.
+- Floating micro-bot mascot, glowing CTA ripple, and hover states that add playful professionalism without overwhelming the layout.
+- Numbered mission cards with CTA badges, hover nuance, and responsive stacking for storytelling-first presentation.
+- Touch devices auto-disable the interactive arm and show an elegant fallback so scrolling stays buttery smooth on mobile.
+- Tools and links section rendered as mobile-friendly cards plus updated contact footer messaging for the Starbase Academy brand.
 
-### Project structure
+## Getting started
 
-- `index.html` &mdash; Page layout and accessible content structure.
-- `styles.css` &mdash; Visual design for the hero section, interactive canvas, and link tiles.
-- `script.js` &mdash; p5.js sketch implementing the inverse kinematics chain, responsive canvas sizing, and subtle background animation.
+1. Open `index.html` in a modern browser.
+2. Move the mouse or drag a finger around the page; the arm will stretch toward the pointer (even beyond the canvas) while keeping page scrolling smooth on touch devices.
+3. Explore the project and resource cards to adapt them for your own programs, kits, or community outreach.
 
-Feel free to swap the tile links for your own projects or extend the sketch with additional segments, constraints, or styling flourishes.
+## Project structure
+
+- `index.html` &mdash; Page layout, mission copy, feature grid, and external resource cards.
+- `styles.css` &mdash; Dark-theme design system, responsive layout rules, and interaction states for cards and buttons.
+- `script.js` &mdash; p5.js sketch powering the articulated arm, pointer tracking outside the canvas, and playful motion jitter.
+
+### Customizing
+
+- Swap project titles, descriptions, tags, and links directly within `index.html`.
+- Adjust starfield, color tokens, spacing, or card radii in the root variables at the top of `styles.css`.
+- Tweak the arm behavior (segment lengths, wobble amplitude, easing) in `script.js` to fit your preferred vibe.
+
+## Firebase hosting
+
+1. Install the Firebase CLI if you have not already: `npm install -g firebase-tools`.
+2. Log in once from your terminal: `firebase login`.
+3. Deploy the site to the existing Hosting target: `firebase deploy --only hosting --project stemblog`.
+
+The configuration files (`firebase.json`, `.firebaserc`) are already set up to publish the current directory while ignoring config and markdown files.
+
+Enjoy iterating on the playground and tailoring it for upcoming launches at Starbase Academy.
