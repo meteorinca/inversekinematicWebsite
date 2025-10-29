@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inverse Kinematics Playground</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Inverse Kinematics Playground</h1>
+    <p>Explore a simple articulated arm and dive into interactive creative coding experiments.</p>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <h2>Follow the Cursor</h2>
+        <p>Move your mouse (or finger on touch devices) within the canvas to guide the robotic arm. Each segment reacts using a lightweight inverse kinematics solver inspired by Dave Pagurek&rsquo;s demo.</p>
+      </div>
+      <div class="hero-visual" id="ik-canvas" aria-label="Interactive inverse kinematics sketch"></div>
+    </section>
+
+    <section class="tiles-section" aria-label="Featured experiments and tools">
+      <h2>Keep Exploring</h2>
+      <div class="tile-grid">
+        <a class="tile" href="https://editor.p5js.org/" target="_blank" rel="noopener">
+          <h3>p5.js Web Editor</h3>
+          <p>Prototype generative sketches and share live links directly from the browser.</p>
+        </a>
+        <a class="tile" href="https://observablehq.com/@d3" target="_blank" rel="noopener">
+          <h3>D3 Observable Notebooks</h3>
+          <p>Explore data-driven experiments and remix visualizations in real-time.</p>
+        </a>
+        <a class="tile" href="https://thecodingtrain.com/" target="_blank" rel="noopener">
+          <h3>The Coding Train</h3>
+          <p>Watch approachable creative coding lessons covering animation, physics, and more.</p>
+        </a>
+        <a class="tile" href="https://github.com/topics/inverse-kinematics" target="_blank" rel="noopener">
+          <h3>IK Experiments on GitHub</h3>
+          <p>Browse open-source inverse kinematics projects to study, fork, and extend.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built with p5.js &bull; Customize the links to showcase your own projects.</p>
+  </footer>
+</body>
+</html>
